@@ -55,8 +55,8 @@
 
 @font-face {
     font-family: 'Min Sans Trial';
-    src: url('fonts/MinSansTrial-Regular.woff2') format('woff2'),
-        url('fonts/MinSansTrial-Regular.woff2') format('woff');
+    src: url('/fonts/MinSansTrial-Regular.woff2') format('woff2'),
+        url('/fonts/MinSansTrial-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -64,8 +64,8 @@
 
 @font-face {
     font-family: 'Min Sans Trial Book';
-    src: url('MinSansTrial-Book.woff2') format('woff2'),
-        url('MinSansTrial-Book.woff') format('woff');
+    src: url('/fonts/MinSansTrial-Book.woff2') format('woff2'),
+        url('/fonts/MinSansTrial-Book.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -73,8 +73,8 @@
 
 @font-face {
     font-family: 'Min Sans Trial';
-    src: url('MinSansTrial-Medium.woff2') format('woff2'),
-        url('MinSansTrial-Medium.woff') format('woff');
+    src: url('/fonts/MinSansTrial-Medium.woff2') format('woff2'),
+        url('/fonts/MinSansTrial-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -96,28 +96,22 @@ body {
 //     background: #222;
 // }
 
-.main-nav {
+.navbar {
     background: #E5D8C5;
     padding: 2rem 0;
 
-    .nav-list {
-        margin-top: 0.75rem;
+    .nav-link {
+        margin: 0 0.5rem;
 
-        li {
-            list-style: none;
-            display: inline-block;
-            margin: 0 1rem;
+        a {
+            text-decoration: none !important;
+            text-transform: uppercase;
+            color: #1E1E1E;
+            font-weight: 600;
+            transition: all 0.2s ease-in-out;
 
-            a {
-                text-decoration: none;
-                text-transform: uppercase;
-                color: #1E1E1E;
-                font-weight: 600;
-                transition: all 0.2s ease-in-out;
-
-                &:hover {
-                    color: #B29166;
-                }
+            &:hover {
+                color: #B29166;
             }
         }
     }
@@ -132,7 +126,7 @@ body {
         text-align: center;
 
         h1 {
-            font-family: 'Min Sans Trial Book';
+            font: normal 36px 'Min Sans Trial';
         }
     }
 }
