@@ -24,6 +24,11 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .btn {
   padding: 1rem 4rem;
   font-size: 1rem;
@@ -195,4 +200,48 @@ body {
     font-size: 28px;
     width: 100%;
   }
+}
+
+footer {
+  background: #1e1e1e;
+  padding: 5rem 0;
+}
+@media (max-width: 767px) {
+  footer {
+    padding: 5rem 1rem 3rem 1rem;
+  }
+}
+footer .footer-logo {
+  width: 90%;
+}
+@media (max-width: 767px) {
+  footer .footer-nav {
+    margin: 3rem 0;
+  }
+}
+footer .footer-nav ul {
+  margin: 0;
+  padding: 0;
+}
+footer .footer-nav ul li {
+  list-style: none;
+  margin: 0.8rem 0;
+}
+footer .footer-nav ul li a {
+  text-decoration: none;
+  color: #FAF7F3;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+footer .footer-contact {
+  text-align: right;
+}
+@media (max-width: 767px) {
+  footer .footer-contact {
+    text-align: left;
+  }
+}
+footer .footer-contact p {
+  color: #FAF7F3;
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */
