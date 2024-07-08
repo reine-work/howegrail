@@ -96,9 +96,33 @@ body {
 //     background: #222;
 // }
 
+.navbar-brand {
+
+    img {
+        @include for-phone {
+            height: 30px;
+        }
+    }
+}
+
+.navbar-toggler {
+    border: none !important;
+    padding: 0;
+}
+
+.navbar-nav {
+    @include for-phone {
+        margin-top: 2rem;
+    }
+}
+
 .navbar {
     background: #E5D8C5;
     padding: 2rem 0;
+
+    @include for-phone {
+        padding: 2rem 1rem;
+    }
 
     .nav-link {
         margin: 0 0.5rem;
