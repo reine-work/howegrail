@@ -114,6 +114,10 @@ body {
         background: #804544;
         color: #fff;
     }
+
+    @include for-phone {
+        width: 250px;
+    }
 }
 
 .btn-outline-def {
@@ -126,6 +130,10 @@ body {
     &:hover {
         background: #B36160;
         color: #fff;
+    }
+
+    @include for-phone {
+        width: 250px;
     }
 }
 
@@ -247,17 +255,24 @@ body {
         @include for-phone {
             outline-offset: 10px;
             height: auto;
-            padding: 1rem;
+        }
+
+        div {
+            @include for-phone {
+                padding: 4rem 2rem;
+            }
         }
 
 
         p {
             font: normal 36px 'Min Sans Trial';
             color: #1e1e1e;
-            margin: 2rem auto;
+            margin: 0 auto 2rem auto;
+            width: 65%;
 
             @include for-phone {
-                font-size: 24px;
+                font-size: 28px;
+                width: 100%;
             }
         }
     }

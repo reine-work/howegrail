@@ -42,6 +42,11 @@ body {
   background: #804544;
   color: #fff;
 }
+@media (max-width: 767px) {
+  .btn-def {
+    width: 250px;
+  }
+}
 
 .btn-outline-def {
   border: solid 1px #B36160;
@@ -53,6 +58,11 @@ body {
 .btn-outline-def:hover {
   background: #B36160;
   color: #fff;
+}
+@media (max-width: 767px) {
+  .btn-outline-def {
+    width: 250px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -166,16 +176,22 @@ body {
   #rsvp .rsvp-content {
     outline-offset: 10px;
     height: auto;
-    padding: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  #rsvp .rsvp-content div {
+    padding: 4rem 2rem;
   }
 }
 #rsvp .rsvp-content p {
   font: normal 36px "Min Sans Trial";
   color: #1e1e1e;
-  margin: 2rem auto;
+  margin: 0 auto 2rem auto;
+  width: 65%;
 }
 @media (max-width: 767px) {
   #rsvp .rsvp-content p {
-    font-size: 24px;
+    font-size: 28px;
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
