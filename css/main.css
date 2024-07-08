@@ -111,6 +111,12 @@ body {
   background-size: cover;
   background-position: center center;
 }
+@media (max-width: 767px) {
+  #intro {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+}
 #intro .intro-content {
   text-align: center;
 }
@@ -118,10 +124,20 @@ body {
   color: #fff;
   font: 400 24px "Raleway";
 }
+@media (max-width: 767px) {
+  #intro .intro-content h2 {
+    font-size: 16px;
+  }
+}
 #intro .intro-content p {
   font: normal 36px "Min Sans Trial";
   color: #fff;
   margin: 2rem 0;
+}
+@media (max-width: 767px) {
+  #intro .intro-content p {
+    font-size: 24px;
+  }
 }
 
 #rsvp {

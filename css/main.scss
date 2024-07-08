@@ -192,18 +192,32 @@ body {
     background-size: cover;
     background-position: center center;
 
+    @include for-phone {
+        height: auto;
+        padding: 3rem 1rem;
+    }
+
     .intro-content {
         text-align: center;
 
         h2 {
             color: #fff;
             font: 400 24px 'Raleway';
+
+            @include for-phone {
+                font-size: 16px;
+            }
         }
 
         p {
             font: normal 36px 'Min Sans Trial';
             color: #fff;
             margin: 2rem 0;
+
+            @include for-phone {
+                font-size: 24px;
+            }
+
         }
     }
 }
