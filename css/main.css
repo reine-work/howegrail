@@ -27,6 +27,8 @@ body {
 .btn {
   padding: 1rem 4rem;
   font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .btn-def {
@@ -114,7 +116,7 @@ body {
 @media (max-width: 767px) {
   #intro {
     height: auto;
-    padding: 3rem 1rem;
+    padding: 6rem 1rem;
   }
 }
 #intro .intro-content {
@@ -146,6 +148,12 @@ body {
   background: #F5EFE8 url("../assets/bgc-skyline.png") no-repeat;
   background-size: 100%;
   background-position: bottom center;
+}
+@media (max-width: 767px) {
+  #rsvp {
+    height: auto;
+    padding: 6rem 1rem;
+  }
 }
 #rsvp .rsvp-content {
   text-align: center;
