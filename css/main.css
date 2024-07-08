@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Min Sans Trial";
+  src: url("fonts/MinSansTrial-Regular.woff2") format("woff2"), url("fonts/MinSansTrial-Regular.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Min Sans Trial Book";
+  src: url("MinSansTrial-Book.woff2") format("woff2"), url("MinSansTrial-Book.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Min Sans Trial";
+  src: url("MinSansTrial-Medium.woff2") format("woff2"), url("MinSansTrial-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  background: #fff;
+  font-family: "Raleway", sans-serif;
+}
+
+.main-nav {
+  background: #E5D8C5;
+  padding: 2rem 0;
+}
+.main-nav .nav-list {
+  margin-top: 0.75rem;
+}
+.main-nav .nav-list li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 1rem;
+}
+.main-nav .nav-list li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #1E1E1E;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+.main-nav .nav-list li a:hover {
+  color: #B29166;
+}
+
+#hero {
+  height: 90vh;
+  background: #F5EFE8;
+}
+#hero .hero-caption {
+  width: 300px;
+  text-align: center;
+}
+#hero .hero-caption h1 {
+  font: normal 36px "Min Sans Trial";
+}/*# sourceMappingURL=main.css.map */

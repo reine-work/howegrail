@@ -1,0 +1,138 @@
+// media quaries
+@mixin for-phone-landscape {
+    @media (max-width: 767px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin for-phone-sm {
+    @media (max-width: 360px) {
+        @content;
+    }
+}
+
+@mixin for-phone {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin for-tablet {
+    @media (min-device-width: 768px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
+        @content;
+    }
+}
+
+@mixin for-tablet-landscape {
+    @media (max-width: 1024px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin for-desktop-md {
+    @media (max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin for-desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin for-desktop-up {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin for-big-desktop-up {
+    @media (min-width: 1800px) {
+        @content;
+    }
+}
+
+@font-face {
+    font-family: 'Min Sans Trial';
+    src: url('fonts/MinSansTrial-Regular.woff2') format('woff2'),
+        url('fonts/MinSansTrial-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Min Sans Trial Book';
+    src: url('MinSansTrial-Book.woff2') format('woff2'),
+        url('MinSansTrial-Book.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Min Sans Trial';
+    src: url('MinSansTrial-Medium.woff2') format('woff2'),
+        url('MinSansTrial-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+// ::-moz-selection {
+//     /* Code for Firefox */
+//     color: #fff;
+//     background: #222;
+// }
+
+// ::selection {
+//     color: #fff;
+//     background: #222;
+// }
+
+.main-nav {
+    background: #E5D8C5;
+    padding: 2rem 0;
+
+    .nav-list {
+        margin-top: 0.75rem;
+
+        li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 1rem;
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #1E1E1E;
+                font-weight: 600;
+                transition: all 0.2s ease-in-out;
+
+                &:hover {
+                    color: #B29166;
+                }
+            }
+        }
+    }
+}
+
+#hero {
+    height: 90vh;
+    background: #F5EFE8;
+
+    .hero-caption {
+        width: 300px;
+        text-align: center;
+
+        h1 {
+            font: normal 36px "Min Sans Trial";
+        }
+    }
+}
