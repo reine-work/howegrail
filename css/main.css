@@ -24,6 +24,35 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+.btn {
+  padding: 1rem 4rem;
+  font-size: 1rem;
+}
+
+.btn-def {
+  border: solid 1px #B36160;
+  color: #fff;
+  background: #B36160;
+  width: 300px;
+  font-weight: 600;
+}
+.btn-def:hover {
+  background: #804544;
+  color: #fff;
+}
+
+.btn-outline-def {
+  border: solid 1px #B36160;
+  color: #B36160;
+  background: transparent;
+  width: 300px;
+  font-weight: 600;
+}
+.btn-outline-def:hover {
+  background: #B36160;
+  color: #fff;
+}
+
 @media (max-width: 767px) {
   .navbar-brand img {
     height: 30px;
@@ -74,4 +103,43 @@ body {
 }
 #hero .hero-caption h1 {
   font: normal 36px "Min Sans Trial";
+}
+
+#intro {
+  height: 100vh;
+  background: url("../assets/intro-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#intro .intro-content {
+  text-align: center;
+}
+#intro .intro-content h2 {
+  color: #fff;
+  font: 400 24px "Raleway";
+}
+#intro .intro-content p {
+  font: normal 36px "Min Sans Trial";
+  color: #fff;
+  margin: 2rem 0;
+}
+
+#rsvp {
+  height: 90vh;
+  padding-top: 160px;
+  background: #F5EFE8 url("../assets/bgc-skyline.png") no-repeat;
+  background-size: 100%;
+  background-position: bottom center;
+}
+#rsvp .rsvp-content {
+  text-align: center;
+  border: solid 2px #C1A785;
+  outline: 2px solid #C1A785;
+  outline-offset: 20px;
+  height: 500px;
+}
+#rsvp .rsvp-content p {
+  font: normal 36px "Min Sans Trial";
+  color: #1e1e1e;
+  margin: 2rem auto;
 }/*# sourceMappingURL=main.css.map */
