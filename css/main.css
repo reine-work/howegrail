@@ -166,4 +166,9 @@ body {
   font: normal 36px "Min Sans Trial";
   color: #1e1e1e;
   margin: 2rem auto;
+}
+@media (max-width: 767px) {
+  #rsvp .rsvp-content p {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=main.css.map */
