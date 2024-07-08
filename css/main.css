@@ -152,7 +152,7 @@ body {
 @media (max-width: 767px) {
   #rsvp {
     height: auto;
-    padding: 6rem 1rem;
+    padding: 6rem 2rem;
   }
 }
 #rsvp .rsvp-content {
@@ -164,8 +164,9 @@ body {
 }
 @media (max-width: 767px) {
   #rsvp .rsvp-content {
-    outline-offset: 40px;
+    outline-offset: 10px;
     height: auto;
+    padding: 1rem;
   }
 }
 #rsvp .rsvp-content p {

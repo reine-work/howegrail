@@ -233,7 +233,7 @@ body {
 
     @include for-phone {
         height: auto;
-        padding: 6rem 1rem;
+        padding: 6rem 2rem;
     }
 
     .rsvp-content {
@@ -245,8 +245,9 @@ body {
         height: 500px;
 
         @include for-phone {
-            outline-offset: 40px;
+            outline-offset: 10px;
             height: auto;
+            padding: 1rem;
         }
 
 
