@@ -242,8 +242,12 @@ body {
         border: solid 2px #C1A785;
         outline: 2px solid #C1A785;
         outline-offset: 20px;
-
         height: 500px;
+
+        @include for-phone {
+            outline-offset: 40px;
+            height: auto;
+        }
 
 
         p {

@@ -162,6 +162,12 @@ body {
   outline-offset: 20px;
   height: 500px;
 }
+@media (max-width: 767px) {
+  #rsvp .rsvp-content {
+    outline-offset: 40px;
+    height: auto;
+  }
+}
 #rsvp .rsvp-content p {
   font: normal 36px "Min Sans Trial";
   color: #1e1e1e;
