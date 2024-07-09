@@ -89,7 +89,7 @@ body {
 }
 @media (max-width: 767px) {
   .navbar {
-    padding: 2rem 1rem;
+    padding: 2rem 0.5rem;
   }
 }
 .navbar .nav-link {
