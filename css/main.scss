@@ -145,7 +145,7 @@ img {
 .navbar-brand {
     img {
         @include for-phone {
-            height: 20px;
+            height: 30px;
             width: auto;
         }
     }
