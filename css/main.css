@@ -146,6 +146,13 @@ p {
     top: -100px;
   }
 }
+@media (max-width: 767px) {
+  .hero-collage .collage-1 {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
 .hero-collage .collage-1 .collage-img-1 {
   position: relative;
   top: 100px;
@@ -157,6 +164,13 @@ p {
     width: 500px;
   }
 }
+@media (max-width: 767px) {
+  .hero-collage .collage-1 .collage-img-1 {
+    width: 150px;
+    height: auto;
+    top: 0px;
+  }
+}
 .hero-collage .collage-1 .collage-img-2 {
   position: relative;
   top: -80px;
@@ -166,6 +180,13 @@ p {
 @media (max-width: 1440px) {
   .hero-collage .collage-1 .collage-img-2 {
     width: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-collage .collage-1 .collage-img-2 {
+    width: 150px;
+    height: auto;
+    top: 0px;
   }
 }
 .hero-collage .collage-2 {

@@ -224,6 +224,12 @@ p {
 
         }
 
+        @include for-phone {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+
         .collage-img-1 {
             position: relative;
             top: 100px;
@@ -232,6 +238,12 @@ p {
             @include for-desktop-md {
                 top: 100px;
                 width: 500px;
+            }
+
+            @include for-phone {
+                width: 150px;
+                height: auto;
+                top: 0px;
             }
         }
 
@@ -243,6 +255,12 @@ p {
 
             @include for-desktop-md {
                 width: 400px;
+            }
+
+            @include for-phone {
+                width: 150px;
+                height: auto;
+                top: 0px;
             }
         }
 
