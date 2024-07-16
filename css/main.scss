@@ -332,11 +332,11 @@ p {
 }
 
 #horizontal-timeline {
+    background: #E5D8C5;
+
     .vertical-section {
         height: 100vh;
         display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .hori-box {
@@ -344,14 +344,52 @@ p {
         display: flex;
         position: sticky;
         top: 0;
+        padding: 5rem 5rem 0 0;
+    }
+
+    .final-fantasy {
+        position: relative;
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 50px;
+        }
     }
 
     .hori-content {
-        min-width: 50vw;
+        min-width: auto;
         min-height: 100vh;
         display: flex;
-        // justify-content: center;
-        align-items: center;
+
+        h2,
+        h5 {
+            font-family: 'Min Sans Trial';
+            font-weight: normal;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+
+            li {
+                list-style: none;
+                text-align: center;
+
+                p {
+                    color: #A23E3E;
+                    font-size: 26px;
+                    line-height: 1.25;
+                }
+            }
+        }
+    }
+
+    .hori-content:first-child {
+        padding-left: 8%;
+        min-width: 350px;
     }
 
     .hori-img {
@@ -363,7 +401,7 @@ p {
 }
 
 #about {
-    padding: 10rem 0;
+    padding: 10rem 0 3rem 0;
     background: #F5EFE8 url('../assets/about-bg.png') no-repeat;
     background-size: auto 100%;
     background-position: bottom 0px right -200px;
