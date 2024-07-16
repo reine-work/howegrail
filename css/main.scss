@@ -358,9 +358,14 @@ p {
     }
 
     .hori-content {
+        // min-width: auto;
+        // min-height: 100vh;
+        // display: flex;
+
         min-width: auto;
         min-height: 100vh;
         display: flex;
+        justify-content: center;
 
         h2,
         h5 {
