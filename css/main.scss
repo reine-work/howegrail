@@ -331,6 +331,37 @@ p {
     }
 }
 
+#horizontal-timeline {
+    .vertical-section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hori-box {
+        overflow-x: hidden;
+        display: flex;
+        position: sticky;
+        top: 0;
+    }
+
+    .hori-content {
+        min-width: 50vw;
+        min-height: 100vh;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+    }
+
+    .hori-img {
+        img {
+            width: auto;
+            height: 800px;
+        }
+    }
+}
+
 #about {
     padding: 10rem 0;
     background: #F5EFE8 url('../assets/about-bg.png') no-repeat;
@@ -368,6 +399,42 @@ p {
     }
 }
 
+#buddymoon {
+    background: #F5EFE8;
+    padding: 3rem 0 0 0;
+
+    .buddymoon-content {
+        h3 {
+            font: normal 32px 'Raleway';
+            margin-bottom: 5rem;
+        }
+
+        span {
+            font: normal 24px 'Raleway';
+            color: #A23E3E;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 4rem;
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+
+    .buddymoon-cta {
+
+        img {
+            height: 200px;
+            width: auto;
+        }
+
+        a {
+            width: auto !important;
+        }
+    }
+}
+
 #rsvp {
     height: 90vh;
     padding-top: 160px;
@@ -382,14 +449,13 @@ p {
 
     .rsvp-content {
         text-align: center;
-
         border: solid 2px #C1A785;
         outline: 2px solid #C1A785;
-        outline-offset: 20px;
+        outline-offset: -20px;
         height: 500px;
 
         @include for-phone {
-            outline-offset: 10px;
+            outline-offset: -10px;
             height: auto;
         }
 
@@ -523,6 +589,10 @@ footer {
     text-align: center;
 }
 
+.timeline-cta {
+    margin-top: 5rem;
+}
+
 .timeline-header {
     text-align: left;
 
@@ -635,4 +705,57 @@ footer {
     width: 7px;
     content: "";
     top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.read-article {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 999;
+    color: #000;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: arial;
+    text-decoration: none;
+    box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px -15px;
+}
+
+.read-article:hover {
+    background: #d5d5d5;
+    box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px 0px;
+}
+
+iframe[sandbox] .read-article {
+    display: none;
 }
