@@ -264,6 +264,7 @@ p {
   position: sticky;
   top: 0;
   padding: 5rem 5rem 0 0;
+  height: 100vh;
 }
 #horizontal-timeline .final-fantasy {
   position: relative;
