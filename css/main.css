@@ -264,6 +264,7 @@ p {
   position: sticky;
   top: 0;
   padding: 5rem 5rem 0 0;
+  width: 100%;
 }
 #horizontal-timeline .final-fantasy {
   position: relative;
@@ -274,7 +275,7 @@ p {
   top: 50px;
 }
 #horizontal-timeline .hori-content {
-  min-width: auto;
+  min-width: 100vh;
   min-height: 100vh;
   display: flex;
   justify-content: center;
