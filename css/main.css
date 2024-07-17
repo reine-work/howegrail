@@ -274,7 +274,7 @@ p {
   top: 50px;
 }
 #horizontal-timeline .hori-content {
-  min-width: 100%;
+  min-width: auto;
   min-height: 100vh;
   display: flex;
   justify-content: center;
