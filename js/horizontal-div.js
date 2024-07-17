@@ -1,7 +1,3 @@
-/**
-* By Alvaro Trigo 
-* Follow me on Twitter: https://twitter.com/imac2
-*/
 (function(){
     init();
 
