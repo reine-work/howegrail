@@ -383,6 +383,10 @@ p {
         img {
             width: auto;
             height: 700px;
+
+            @include for-phone {
+                height: 500px;
+            }
         }
     }
 }

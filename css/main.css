@@ -298,6 +298,11 @@ p {
   width: auto;
   height: 700px;
 }
+@media (max-width: 767px) {
+  #horizontal-timeline .hori-img img {
+    height: 500px;
+  }
+}
 
 .timeline-start {
   position: relative;
