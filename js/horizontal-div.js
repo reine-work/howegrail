@@ -64,7 +64,7 @@ function horizontalScroll(){
         return;
     }else{
         let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
-        sticky.scrollLeft =(scrollWidth/verticalScrollHeight)*(-scrolled)*1.5;
+        sticky.scrollLeft =(scrollWidth/verticalScrollHeight)*(-scrolled)*1.25;
     
     }
 }

@@ -265,14 +265,6 @@ p {
   top: 0;
   padding: 5rem 5rem 0 0;
 }
-#horizontal-timeline .final-fantasy {
-  position: relative;
-}
-#horizontal-timeline .final-fantasy img {
-  position: absolute;
-  left: 0;
-  top: 50px;
-}
 #horizontal-timeline .hori-content {
   min-width: auto;
   min-height: 100vh;
@@ -284,32 +276,22 @@ p {
   font-family: "Min Sans Trial";
   font-weight: normal;
 }
-#horizontal-timeline .hori-content ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-}
-#horizontal-timeline .hori-content ul li {
-  list-style: none;
-  text-align: center;
-}
-#horizontal-timeline .hori-content ul li p {
-  color: #A23E3E;
-  font-size: 26px;
-  line-height: 1.25;
-}
-#horizontal-timeline .hori-content:first-child {
-  padding-left: 8%;
-  min-width: 350px;
-}
 #horizontal-timeline .hori-img img {
   width: auto;
   height: 700px;
 }
 
+.timeline-start {
+  position: relative;
+}
+.timeline-start img {
+  position: absolute;
+  left: 0;
+  top: 50px;
+}
+
 .sticky-parent {
-  height: 3000px;
+  height: 2250px;
 }
 
 .sticky {
@@ -318,19 +300,37 @@ p {
   max-height: 100vh;
   overflow-x: hidden;
   overflow-y: hidden;
+  padding: 6rem 0 0 0;
 }
 
 .dim {
   display: block;
   height: auto;
 }
+.dim:first-child {
+  width: 400px;
+  min-width: 400px;
+  padding-left: 8%;
+}
+.dim ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.dim ul li {
+  list-style: none;
+  text-align: center;
+  margin-left: 2rem;
+}
+.dim ul li p {
+  color: #A23E3E;
+  font-size: 26px;
+  line-height: 1.25;
+}
 
 .horizontal {
   display: flex;
-}
-
-.br {
-  outline: solid;
 }
 
 .hori-img img {

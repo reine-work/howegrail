@@ -347,16 +347,6 @@ p {
         padding: 5rem 5rem 0 0;
     }
 
-    .final-fantasy {
-        position: relative;
-
-        img {
-            position: absolute;
-            left: 0;
-            top: 50px;
-        }
-    }
-
     .hori-content {
         // min-width: auto;
         // min-height: 100vh;
@@ -372,29 +362,6 @@ p {
             font-family: 'Min Sans Trial';
             font-weight: normal;
         }
-
-        ul {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-around;
-
-            li {
-                list-style: none;
-                text-align: center;
-
-                p {
-                    color: #A23E3E;
-                    font-size: 26px;
-                    line-height: 1.25;
-                }
-            }
-        }
-    }
-
-    .hori-content:first-child {
-        padding-left: 8%;
-        min-width: 350px;
     }
 
     .hori-img {
@@ -405,8 +372,18 @@ p {
     }
 }
 
+.timeline-start {
+    position: relative;
+
+    img {
+        position: absolute;
+        left: 0;
+        top: 50px;
+    }
+}
+
 .sticky-parent {
-    height: 3000px;
+    height: 2250px;
 }
 
 .sticky {
@@ -415,19 +392,41 @@ p {
     max-height: 100vh;
     overflow-x: hidden;
     overflow-y: hidden;
+    padding: 6rem 0 0 0;
 }
 
 .dim {
     display: block;
     height: auto;
+
+    &:first-child {
+        width: 400px;
+        min-width: 400px;
+        padding-left: 8%;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+
+        li {
+            list-style: none;
+            text-align: center;
+            margin-left: 2rem;
+
+            p {
+                color: #A23E3E;
+                font-size: 26px;
+                line-height: 1.25;
+            }
+        }
+    }
 }
 
 .horizontal {
     display: flex;
-}
-
-.br {
-    outline: solid;
 }
 
 .hori-img {
