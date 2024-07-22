@@ -758,9 +758,15 @@ footer .footer-contact p {
 #full-details-timeline {
   padding: 5rem 0 40rem 0;
   background: #E5D8C5 url("../assets/full-details-timeline-bg.png") no-repeat;
-  background-size: 40%;
-  background-position: top right;
+  background-size: 45%;
+  background-position: right 0 top 10%;
   position: relative;
+}
+@media (max-width: 767px) {
+  #full-details-timeline {
+    padding: 5rem 0 30rem 0;
+    background-image: none;
+  }
 }
 
 .timeline-bg-bottom {
@@ -768,6 +774,16 @@ footer .footer-contact p {
   bottom: 50px;
   right: 0;
   width: 600px;
+}
+@media (max-width: 767px) {
+  .timeline-bg-bottom {
+    width: 90%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+  }
 }
 
 .full-details-timeline-header {
@@ -969,6 +985,187 @@ footer .footer-contact p {
     right: inherit;
   }
 }
+#reception {
+  background: #F5EFE8 url("../assets/reception-bg.png") no-repeat;
+  background-size: 30%;
+  background-position: center left;
+  padding: 5rem 0;
+}
+@media (max-width: 767px) {
+  #reception {
+    padding: 3rem 1rem 30rem 1rem;
+    background: #F5EFE8 url("../assets/reception-bg-mobile.png") no-repeat;
+    background-position: center bottom;
+    background-size: 100%;
+  }
+}
+@media (max-width: 767px) {
+  #reception .reception-cta {
+    text-align: center;
+  }
+}
+#reception .reception-header span {
+  color: #A23E3E;
+  font-weight: 500;
+  font-size: 20px;
+}
+#reception .reception-header img {
+  width: 60px;
+  margin-left: 0.5rem;
+}
+#reception .reception-header h3 {
+  font-family: "Min Sans Trial", sans-serif;
+  font-weight: normal;
+  overflow: hidden;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  #reception .reception-header h3 {
+    font-size: 32px;
+  }
+}
+#reception .reception-header h3:before {
+  display: block;
+  float: right;
+  margin-top: 0.6em;
+  /* half the line-height */
+  border-top: 1px solid #1e1e1e;
+  width: 80%;
+  content: "";
+}
+@media (max-width: 767px) {
+  #reception .reception-header h3:before {
+    display: none;
+  }
+}
+
+#dresscode {
+  padding: 5rem 0;
+  background: #E5D8C5;
+}
+@media (max-width: 767px) {
+  #dresscode {
+    padding: 3rem 1rem;
+  }
+}
+#dresscode .dresscode-content {
+  margin-top: 1rem;
+}
+#dresscode .dresscode-header {
+  margin-bottom: 3rem;
+}
+#dresscode .dresscode-header h2 {
+  font: normal 36px "Min Sans Trial";
+}
+#dresscode .dresscode-img {
+  width: 200px;
+  padding-top: 2rem;
+}
+@media (max-width: 767px) {
+  #dresscode .dresscode-img {
+    display: none;
+  }
+}
+#dresscode .dresscode-img-mobile {
+  width: 100px;
+  margin: 1.5rem 0;
+  display: none;
+}
+@media (max-width: 767px) {
+  #dresscode .dresscode-img-mobile {
+    display: block;
+  }
+}
+
+#entourage {
+  padding: 5rem 0;
+  background: #F5EFE8 url("../assets/entourage-bg.png") no-repeat;
+  background-position: center center;
+  background-size: 125%;
+}
+@media (max-width: 767px) {
+  #entourage {
+    padding: 3rem 1rem;
+  }
+}
+@media (max-width: 767px) {
+  #entourage .vr {
+    display: none;
+  }
+}
+#entourage .entourage-list {
+  display: flex;
+}
+@media (max-width: 767px) {
+  #entourage .entourage-list {
+    display: block;
+  }
+}
+#entourage .entourage-header-icon img {
+  width: 100px;
+}
+#entourage .entourage-header-icon-center h2 {
+  font: normal 36px "Min Sans Trial";
+}
+#entourage .entourage-header-icon-center img {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+#entourage .entourage-content {
+  text-align: center;
+  border: solid 2px #B1605E;
+  outline: 2px solid #B1605E;
+  outline-offset: -20px;
+  padding: 8rem 3rem;
+}
+@media (max-width: 767px) {
+  #entourage .entourage-content {
+    padding: 3rem 2rem;
+  }
+}
+@media (max-width: 767px) {
+  #entourage .entourage-header-icon {
+    display: none;
+  }
+}
+#entourage .entourage-right-icon,
+#entourage .entourage-left-icon {
+  display: none;
+}
+@media (max-width: 767px) {
+  #entourage .entourage-right-icon,
+  #entourage .entourage-left-icon {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  #entourage .entourage-right,
+  #entourage .entourage-left {
+    text-align: center;
+  }
+}
+#entourage .entourage-name-item {
+  margin: 2rem 0;
+}
+#entourage .entourage-name-item span {
+  font: 500 14px "Raleway";
+  margin: 1rem 0;
+}
+#entourage .entourage-name-item p {
+  margin: 0;
+  padding: 0;
+  color: #B29166;
+  font: normal 28px "Min Sans Trial";
+}
+#entourage .entourage-list {
+  width: 100%;
+}
+#entourage .entourage-sponsors .entourage-name {
+  margin: 1rem 0 0 0;
+}
+
 .read-article {
   position: absolute;
   top: 10px;

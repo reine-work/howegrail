@@ -919,9 +919,14 @@ footer {
 #full-details-timeline {
     padding: 5rem 0 40rem 0;
     background: #E5D8C5 url('../assets/full-details-timeline-bg.png') no-repeat;
-    background-size: 40%;
-    background-position: top right;
+    background-size: 45%;
+    background-position: right 0 top 10%;
     position: relative;
+
+    @include for-phone {
+        padding: 5rem 0 30rem 0;
+        background-image: none;
+    }
 }
 
 .timeline-bg-bottom {
@@ -929,6 +934,15 @@ footer {
     bottom: 50px;
     right: 0;
     width: 600px;
+
+    @include for-phone {
+        width: 90%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        padding-bottom: 3rem;
+    }
 }
 
 .full-details-timeline-header {
@@ -1145,9 +1159,208 @@ footer {
     }
 }
 
+#reception {
+    background: #F5EFE8 url('../assets/reception-bg.png') no-repeat;
+    background-size: 30%;
+    background-position: center left;
+    padding: 5rem 0;
 
+    @include for-phone {
+        padding: 3rem 1rem 30rem 1rem;
+        background: #F5EFE8 url('../assets/reception-bg-mobile.png') no-repeat;
+        background-position: center bottom;
+        background-size: 100%;
+    }
 
+    .reception-cta {
+        @include for-phone {
+            text-align: center;
+        }
+    }
 
+    .reception-header {
+        span {
+            color: #A23E3E;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        img {
+            width: 60px;
+            margin-left: 0.5rem;
+        }
+
+        h3 {
+            font-family: 'Min Sans Trial', sans-serif;
+            font-weight: normal;
+            overflow: hidden;
+            text-align: left;
+
+            @include for-phone {
+                font-size: 32px;
+            }
+        }
+
+        h3:before {
+            display: block;
+            float: right;
+            margin-top: .6em;
+            /* half the line-height */
+            border-top: 1px solid #1e1e1e;
+            width: 80%;
+            content: "";
+
+            @include for-phone {
+                display: none;
+            }
+        }
+    }
+}
+
+#dresscode {
+    padding: 5rem 0;
+    background: #E5D8C5;
+
+    @include for-phone {
+        padding: 3rem 1rem;
+    }
+
+    .dresscode-content {
+        margin-top: 1rem;
+    }
+
+    .dresscode-header {
+        margin-bottom: 3rem;
+
+        h2 {
+            font: normal 36px 'Min Sans Trial';
+        }
+    }
+
+    .dresscode-img {
+        width: 200px;
+        padding-top: 2rem;
+
+        @include for-phone {
+            display: none;
+        }
+    }
+
+    .dresscode-img-mobile {
+        width: 100px;
+        margin: 1.5rem 0;
+        display: none;
+
+        @include for-phone {
+            display: block;
+        }
+    }
+}
+
+#entourage {
+    padding: 5rem 0;
+    background: #F5EFE8 url('../assets/entourage-bg.png') no-repeat;
+    background-position: center center;
+    background-size: 125%;
+
+    @include for-phone {
+        padding: 3rem 1rem;
+    }
+
+    .vr {
+        @include for-phone {
+            display: none;
+        }
+    }
+
+    .entourage-list {
+        display: flex;
+
+        @include for-phone {
+            display: block;
+        }
+    }
+
+    .entourage-header-icon {
+        img {
+            width: 100px;
+        }
+    }
+
+    .entourage-header-icon-center {
+        h2 {
+            font: normal 36px 'Min Sans Trial';
+        }
+
+        img {
+            width: 150px;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .entourage-content {
+        text-align: center;
+        border: solid 2px #B1605E;
+        outline: 2px solid #B1605E;
+        outline-offset: -20px;
+        padding: 8rem 3rem;
+
+        @include for-phone {
+            padding: 3rem 2rem;
+        }
+    }
+
+    .entourage-header-icon {
+        @include for-phone {
+            display: none;
+        }
+    }
+
+    .entourage-right-icon,
+    .entourage-left-icon {
+        display: none;
+
+        @include for-phone {
+            display: block;
+            width: 100px;
+            margin: 0 auto;
+        }
+    }
+
+    .entourage-right,
+    .entourage-left {
+
+        @include for-phone {
+            text-align: center;
+        }
+    }
+
+    .entourage-name-item {
+        margin: 2rem 0;
+
+        span {
+            font: 500 14px 'Raleway';
+            margin: 1rem 0;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            color: #B29166;
+            font: normal 28px 'Min Sans Trial';
+        }
+    }
+
+    .entourage-list {
+        width: 100%;
+    }
+
+    .entourage-sponsors {
+        .entourage-name {
+            margin: 1rem 0 0 0;
+        }
+    }
+}
 
 
 
