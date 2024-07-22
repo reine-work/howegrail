@@ -1317,6 +1317,7 @@ footer .footer-contact p {
   #entourage .entourage-right,
   #entourage .entourage-left {
     text-align: center;
+    padding-top: 3rem;
   }
 }
 #entourage .entourage-name-item {
