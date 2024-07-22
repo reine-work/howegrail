@@ -124,7 +124,7 @@ p {
 @media (max-width: 767px) {
   #hero {
     background: url("../assets/hero/hero-bg-mobile.png") no-repeat;
-    background-size: 140%;
+    background-size: 135%;
     background-position: center center;
     height: 100vh;
   }
@@ -933,6 +933,11 @@ footer .footer-contact p {
   bottom: -70px;
   left: -70px;
   width: 60px;
+}
+@media (max-width: 767px) {
+  .full-details-timeline .content .coffee-icon {
+    display: none;
+  }
 }
 .full-details-timeline .content a {
   text-decoration: underline;
