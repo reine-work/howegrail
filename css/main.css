@@ -366,6 +366,11 @@ p {
   font-size: 26px;
   line-height: 1.25;
 }
+@media (max-width: 767px) {
+  .dim ul li p {
+    font-size: 18px;
+  }
+}
 
 .horizontal {
   display: flex;

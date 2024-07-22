@@ -451,6 +451,10 @@ p {
                 color: #A23E3E;
                 font-size: 26px;
                 line-height: 1.25;
+
+                @include for-phone {
+                    font-size: 18px;
+                }
             }
         }
     }
