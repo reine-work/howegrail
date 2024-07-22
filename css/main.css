@@ -300,7 +300,7 @@ p {
 }
 @media (max-width: 767px) {
   #horizontal-timeline .hori-img img {
-    height: 500px;
+    height: 450px;
   }
 }
 
