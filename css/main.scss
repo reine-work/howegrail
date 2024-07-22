@@ -788,6 +788,14 @@ footer {
     background-position: center left;
     height: 80vh;
 
+    @include for-phone {
+        height: auto;
+        padding-bottom: 10rem;
+        background-position: center bottom;
+        background-size: 100%;
+        padding: 3rem 1rem 32rem 1rem;
+    }
+
     .fd1-heading {
         span {
             color: #A23E3E;
@@ -806,6 +814,10 @@ footer {
         font-weight: normal;
         overflow: hidden;
         text-align: left;
+
+        @include for-phone {
+            font-size: 32px;
+        }
     }
 
     h3:before {
@@ -816,16 +828,28 @@ footer {
         border-top: 1px solid #1e1e1e;
         width: 80%;
         content: "";
+
+        @include for-phone {
+            display: none;
+        }
     }
 
     ul {
         margin: 3rem 0;
+
+        li {
+            margin: 0.35rem 0;
+        }
     }
 }
 
 #full-details-section-2 {
     background: #F5EFE8;
-    height: 80vh;
+
+    @include for-phone {
+        height: auto;
+        padding: 3rem 1rem;
+    }
 
     .fd1-heading {
         span {
@@ -845,6 +869,10 @@ footer {
         font-weight: normal;
         overflow: hidden;
         text-align: left;
+
+        @include for-phone {
+            font-size: 32px;
+        }
     }
 
     h3:before {
@@ -855,14 +883,267 @@ footer {
         border-top: 1px solid #1e1e1e;
         width: 80%;
         content: "";
+
+        @include for-phone {
+            display: none;
+        }
     }
 
     ul {
         margin: 3rem 0;
+
+        li {
+            margin: 0.35rem 0;
+        }
+    }
+
+    .map {
+        padding: 3rem 1rem 1rem 1rem;
+
+        @include for-phone {
+            padding: 0;
+        }
+
+        img {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: #9D8755;
+            font-weight: 500;
+        }
     }
 }
 
+// Responsive Timeline
+#full-details-timeline {
+    padding: 5rem 0 40rem 0;
+    background: #E5D8C5 url('../assets/full-details-timeline-bg.png') no-repeat;
+    background-size: 40%;
+    background-position: top right;
+    position: relative;
+}
 
+.timeline-bg-bottom {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    width: 600px;
+}
+
+.full-details-timeline-header {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    span {
+        color: #A23E3E;
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 0.5rem;
+    }
+
+    img {
+        width: 60px;
+    }
+
+    h4 {
+        font: normal 32px 'Min Sans Trial', sans-serif;
+        margin-top: 0.5rem;
+    }
+}
+
+.full-details-timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+    .content {
+        padding: 4rem 0 2rem 0;
+        overflow: auto;
+
+        @include for-phone {
+            padding: 2rem 0 3rem 0;
+        }
+
+        h6 {
+            font-size: 20px;
+        }
+
+        h5 {
+            font: normal 32px 'Min Sans Trial';
+            margin: 0 0 2rem 0;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        ul {
+            margin: 0 0 0 1rem;
+            padding: 0;
+
+            li {
+                float: none;
+                width: 100%;
+                text-align: left !important;
+                padding: 0;
+                list-style-type: disc !important;
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.full-details-timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #1e1e1e;
+}
+
+.full-details-timeline:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 2px;
+    height: 317px;
+    background: #E5D8C5;
+}
+
+.full-details-timeline ul {
+    padding: 0;
+    margin: 0;
+}
+
+.full-details-timeline ul li {
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.full-details-timeline ul li:nth-child(odd) {
+    float: left;
+    text-align: left;
+    clear: both;
+}
+
+.full-details-timeline ul li:nth-child(even) {
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+.full-details-timeline ul li:nth-child(odd):before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 0px;
+    right: -6px;
+    background: #1e1e1e;
+    border-radius: 50%;
+}
+
+.full-details-timeline ul li:nth-child(even):before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 24px;
+    left: -4px;
+    background: #1e1e1e;
+    border-radius: 50%;
+}
+
+.full-details-timeline ul li h3 {
+    padding: 0;
+    margin: 0;
+    color: #1e1e1e;
+    font-weight: 600;
+}
+
+.full-details-timeline ul li p {
+    margin: 0;
+    padding: 0;
+}
+
+.full-details-timeline ul li .time h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.full-details-timeline ul li:nth-child(odd) .time {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #1e1e1e;
+    color: #fff;
+    border-radius: 18px;
+}
+
+.full-details-timeline ul li:nth-child(even) .time {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #1e1e1e;
+    color: #fff;
+    border-radius: 18px;
+}
+
+.full-details-timeline>ul>li:last-child {
+    border-left: solid 2px #999999;
+}
+
+@media(max-width:1000px) {
+    .full-details-timeline {
+        width: 100%;
+    }
+}
+
+@media(max-width:767px) {
+    .full-details-timeline {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .full-details-timeline:before {
+        left: 20px;
+        height: 100%;
+    }
+
+    .full-details-timeline ul li:nth-child(odd),
+    .full-details-timeline ul li:nth-child(even) {
+        width: 100%;
+        text-align: left;
+    }
+
+    .full-details-timeline ul li:nth-child(odd):before,
+    .full-details-timeline ul li:nth-child(even):before {
+        top: 0px;
+        left: 16px;
+    }
+
+    .full-details-timeline ul li:nth-child(odd) .time,
+    .full-details-timeline ul li:nth-child(even) .time {
+        top: -14px;
+        left: 40px;
+        right: inherit;
+    }
+}
 
 
 
