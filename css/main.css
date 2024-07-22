@@ -905,6 +905,10 @@ footer .footer-contact p {
     padding: 2rem 0 3rem 0;
   }
 }
+.full-details-timeline .content a {
+  text-decoration: underline;
+  color: #1e1e1e !important;
+}
 .full-details-timeline .content h6 {
   font-size: 20px;
 }
