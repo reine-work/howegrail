@@ -171,7 +171,7 @@ p {
     padding: 2rem 0;
 
     @include for-phone {
-        padding: 2rem 0.5rem;
+        padding: 1.25rem 0.5rem;
     }
 
     .nav-link {
@@ -201,7 +201,7 @@ p {
         background: url('../assets/hero/hero-bg-mobile.png') no-repeat;
         background-size: 135%;
         background-position: center center;
-        height: 100vh;
+        height: 115vh;
     }
 
     .hero-caption {
@@ -505,7 +505,7 @@ p {
             display: block;
 
             @include for-phone {
-                width: 80%;
+                width: 95%;
             }
         }
     }
@@ -742,7 +742,7 @@ footer {
 
     a {
         @include for-phone {
-            width: 75%;
+            width: 85%;
         }
     }
 }

@@ -98,7 +98,7 @@ p {
 }
 @media (max-width: 767px) {
   .navbar {
-    padding: 2rem 0.5rem;
+    padding: 1.25rem 0.5rem;
   }
 }
 .navbar .nav-link {
@@ -126,7 +126,7 @@ p {
     background: url("../assets/hero/hero-bg-mobile.png") no-repeat;
     background-size: 135%;
     background-position: center center;
-    height: 100vh;
+    height: 115vh;
   }
 }
 #hero .hero-caption {
@@ -406,7 +406,7 @@ p {
 }
 @media (max-width: 767px) {
   #about .about-content a {
-    width: 80%;
+    width: 95%;
   }
 }
 
@@ -625,7 +625,7 @@ footer .footer-contact p {
 }
 @media (max-width: 767px) {
   .timeline-cta a {
-    width: 75%;
+    width: 85%;
   }
 }
 
