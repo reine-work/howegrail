@@ -294,11 +294,6 @@ p {
   font-family: "Min Sans Trial";
   font-weight: normal;
 }
-@media (max-width: 767px) {
-  #horizontal-timeline .hori-img {
-    padding-right: 200px;
-  }
-}
 #horizontal-timeline .hori-img img {
   width: auto;
   height: 700px;
@@ -323,7 +318,7 @@ p {
 }
 @media (max-width: 767px) {
   .sticky-parent {
-    height: 3000px;
+    height: 3200px;
   }
 }
 

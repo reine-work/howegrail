@@ -380,9 +380,6 @@ p {
     }
 
     .hori-img {
-        @include for-phone {
-            padding-right: 200px;
-        }
 
         img {
             width: auto;
@@ -409,7 +406,7 @@ p {
     height: 2250px;
 
     @include for-phone {
-        height: 3000px;
+        height: 3200px;
     }
 }
 
