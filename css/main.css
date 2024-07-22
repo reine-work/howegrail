@@ -294,6 +294,11 @@ p {
   font-family: "Min Sans Trial";
   font-weight: normal;
 }
+@media (max-width: 767px) {
+  #horizontal-timeline .hori-img {
+    padding-right: 200px;
+  }
+}
 #horizontal-timeline .hori-img img {
   width: auto;
   height: 700px;
@@ -772,6 +777,11 @@ footer .footer-contact p {
     background-size: 100%;
     padding: 3rem 1rem 32rem 1rem;
   }
+}
+#full-details-section-1 span {
+  color: #A23E3E;
+  font-weight: 500;
+  font-size: 20px;
 }
 #full-details-section-1 .fd1-heading span {
   color: #A23E3E;

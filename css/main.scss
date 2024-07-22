@@ -380,6 +380,10 @@ p {
     }
 
     .hori-img {
+        @include for-phone {
+            padding-right: 200px;
+        }
+
         img {
             width: auto;
             height: 700px;
@@ -905,6 +909,12 @@ footer {
         background-position: center bottom;
         background-size: 100%;
         padding: 3rem 1rem 32rem 1rem;
+    }
+
+    span {
+        color: #A23E3E;
+        font-weight: 500;
+        font-size: 20px;
     }
 
     .fd1-heading {
