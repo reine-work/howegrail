@@ -197,9 +197,20 @@ p {
     position: relative;
     overflow: hidden;
 
+    @include for-phone {
+        background: url('../assets/hero/hero-bg-mobile.png') no-repeat;
+        background-size: 140%;
+        background-position: center center;
+        height: 100vh;
+    }
+
     .hero-caption {
         width: 300px;
         text-align: center;
+
+        @include for-phone {
+            margin-top: -150px;
+        }
 
         h1 {
             font: normal 36px 'Min Sans Trial';
@@ -213,6 +224,10 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @include for-phone {
+        display: none;
+    }
 
     .collage-1 {
         display: flex;
@@ -384,6 +399,10 @@ p {
 
 .sticky-parent {
     height: 2250px;
+
+    @include for-phone {
+        height: 3000px;
+    }
 }
 
 .sticky {
@@ -864,7 +883,7 @@ footer {
 // SUB-PAGES
 #full-details-section-1 {
     background: #F5EFE8 url('../assets/full-details-section-1.png') no-repeat;
-    background-size: 30%;
+    background-size: 28%;
     background-position: center left;
     height: 80vh;
 
@@ -1054,10 +1073,17 @@ footer {
 
     .content {
         padding: 4rem 0 2rem 0;
-        overflow: auto;
+        position: relative;
 
         @include for-phone {
             padding: 2rem 0 3rem 0;
+        }
+
+        .coffee-icon {
+            position: absolute;
+            bottom: -70px;
+            left: -70px;
+            width: 60px;
         }
 
         a {

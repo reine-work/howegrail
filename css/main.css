@@ -121,9 +121,22 @@ p {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 767px) {
+  #hero {
+    background: url("../assets/hero/hero-bg-mobile.png") no-repeat;
+    background-size: 140%;
+    background-position: center center;
+    height: 100vh;
+  }
+}
 #hero .hero-caption {
   width: 300px;
   text-align: center;
+}
+@media (max-width: 767px) {
+  #hero .hero-caption {
+    margin-top: -150px;
+  }
 }
 #hero .hero-caption h1 {
   font: normal 36px "Min Sans Trial";
@@ -135,6 +148,11 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+@media (max-width: 767px) {
+  .hero-collage {
+    display: none;
+  }
 }
 .hero-collage .collage-1 {
   display: flex;
@@ -292,6 +310,11 @@ p {
 
 .sticky-parent {
   height: 2250px;
+}
+@media (max-width: 767px) {
+  .sticky-parent {
+    height: 3000px;
+  }
 }
 
 .sticky {
@@ -722,7 +745,7 @@ footer .footer-contact p {
 
 #full-details-section-1 {
   background: #F5EFE8 url("../assets/full-details-section-1.png") no-repeat;
-  background-size: 30%;
+  background-size: 28%;
   background-position: center left;
   height: 80vh;
 }
@@ -898,12 +921,18 @@ footer .footer-contact p {
 }
 .full-details-timeline .content {
   padding: 4rem 0 2rem 0;
-  overflow: auto;
+  position: relative;
 }
 @media (max-width: 767px) {
   .full-details-timeline .content {
     padding: 2rem 0 3rem 0;
   }
+}
+.full-details-timeline .content .coffee-icon {
+  position: absolute;
+  bottom: -70px;
+  left: -70px;
+  width: 60px;
 }
 .full-details-timeline .content a {
   text-decoration: underline;
