@@ -732,7 +732,7 @@ footer {
     @include for-phone {
         background-size: 100%;
         background-position: bottom center;
-        padding: 3rem 1rem 800px 1rem;
+        padding: 3rem 1rem 750px 1rem;
     }
 }
 
@@ -744,9 +744,13 @@ footer {
 .timeline-cta {
     margin-top: 5rem;
 
+    @include for-phone {
+        margin-top: 1rem;
+    }
+
     a {
         @include for-phone {
-            width: 85%;
+            display: none;
         }
     }
 }

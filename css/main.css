@@ -616,7 +616,7 @@ footer .footer-contact p {
   #timeline {
     background-size: 100%;
     background-position: bottom center;
-    padding: 3rem 1rem 800px 1rem;
+    padding: 3rem 1rem 750px 1rem;
   }
 }
 
@@ -629,8 +629,13 @@ footer .footer-contact p {
   margin-top: 5rem;
 }
 @media (max-width: 767px) {
+  .timeline-cta {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 767px) {
   .timeline-cta a {
-    width: 85%;
+    display: none;
   }
 }
 
