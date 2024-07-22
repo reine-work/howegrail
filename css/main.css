@@ -114,6 +114,13 @@ p {
 .navbar .nav-link a:hover {
   color: #B29166;
 }
+@media (max-width: 767px) {
+  .navbar .nav-link a {
+    color: #B29166;
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+  }
+}
 
 #hero {
   height: 100vh;
@@ -898,7 +905,7 @@ footer .footer-contact p {
 }
 @media (max-width: 767px) {
   #full-details-timeline {
-    padding: 5rem 0 30rem 0;
+    padding: 5rem 0 25rem 0;
     background-image: none;
   }
 }
@@ -911,11 +918,10 @@ footer .footer-contact p {
 }
 @media (max-width: 767px) {
   .timeline-bg-bottom {
-    width: 90%;
+    width: 95%;
     bottom: 0;
     right: 0;
-    left: 0;
-    margin: 0 auto;
+    left: auto;
     padding-bottom: 3rem;
   }
 }
@@ -1025,6 +1031,10 @@ footer .footer-contact p {
   box-sizing: border-box;
 }
 
+.full-details-timeline > ul > li {
+  margin-bottom: 3rem;
+}
+
 .full-details-timeline ul li:nth-child(odd) {
   float: left;
   text-align: left;
@@ -1117,6 +1127,15 @@ footer .footer-contact p {
     left: 20px;
     height: 100%;
   }
+  .full-details-timeline:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 2px;
+    height: 481px;
+    background: #E5D8C5;
+  }
   .full-details-timeline ul li:nth-child(odd),
   .full-details-timeline ul li:nth-child(even) {
     width: 100%;
@@ -1144,8 +1163,8 @@ footer .footer-contact p {
   #reception {
     padding: 3rem 1rem 30rem 1rem;
     background: #F5EFE8 url("../assets/reception-bg-mobile.png") no-repeat;
-    background-position: center bottom;
-    background-size: 100%;
+    background-position: left bottom;
+    background-size: 98%;
   }
 }
 @media (max-width: 767px) {
