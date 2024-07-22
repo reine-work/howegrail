@@ -1172,6 +1172,10 @@ footer {
     width: 2px;
     height: 317px;
     background: #E5D8C5;
+
+    @include for-desktop-up {
+        height: 349px;
+    }
 }
 
 .full-details-timeline ul {

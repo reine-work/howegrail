@@ -1017,6 +1017,11 @@ footer .footer-contact p {
   height: 317px;
   background: #E5D8C5;
 }
+@media (min-width: 1200px) {
+  .full-details-timeline:after {
+    height: 349px;
+  }
+}
 
 .full-details-timeline ul {
   padding: 0;
