@@ -446,7 +446,6 @@ p {
         background-size: 75%;
         background-position: bottom 0px right 0px;
         padding: 3rem 1rem 30rem 1rem;
-        border-bottom: solid 1px #000;
     }
 
     .about-img {
@@ -708,8 +707,9 @@ footer {
     padding: 3rem 0;
 
     @include for-phone {
-        background-image: none;
-        padding: 3rem 1rem;
+        background-size: 100%;
+        background-position: bottom center;
+        padding: 3rem 1rem 800px 1rem;
     }
 }
 
@@ -720,6 +720,12 @@ footer {
 
 .timeline-cta {
     margin-top: 5rem;
+
+    a {
+        @include for-phone {
+            width: 75%;
+        }
+    }
 }
 
 .timeline-header {
@@ -747,6 +753,12 @@ footer {
 .timeline {
     position: relative;
     left: 80px;
+
+    @include for-phone {
+        left: 0px;
+    }
+
+
 }
 
 .timeline li {
@@ -759,6 +771,11 @@ footer {
     padding: 0 2rem 1rem 2.5rem;
     list-style: none;
     text-align: left;
+
+    @include for-phone {
+        padding: 0 0 1rem 1.5rem;
+        margin-left: 1rem;
+    }
 }
 
 .timeline .event {
@@ -798,7 +815,8 @@ footer {
     width: 80px;
 
     @include for-phone {
-        width: 60px;
+        width: 50px;
+        left: -60px;
     }
 }
 
@@ -806,7 +824,7 @@ footer {
     .event {
         span {
             color: #B29166;
-            font-family: Raleway;
+            font-family: 'Raleway';
             font-size: 18px;
             font-weight: 400;
             line-height: 26.64px;
@@ -820,6 +838,10 @@ footer {
 
         p {
             font-size: 16px;
+
+            @include for-phone {
+                font-size: 14px;
+            }
         }
     }
 
