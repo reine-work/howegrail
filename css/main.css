@@ -341,8 +341,16 @@ p {
 #about {
   padding: 10rem 0 3rem 0;
   background: #F5EFE8 url("../assets/about-bg.png") no-repeat;
-  background-size: auto 100%;
-  background-position: bottom 0px right -200px;
+  background-size: 30%;
+  background-position: bottom 0px right 0px;
+}
+@media (max-width: 767px) {
+  #about {
+    background-size: 75%;
+    background-position: bottom 0px right 0px;
+    padding: 3rem 1rem 30rem 1rem;
+    border-bottom: solid 1px #000;
+  }
 }
 #about .about-img img {
   width: 90%;
@@ -350,6 +358,12 @@ p {
 #about .about-content h3 {
   font: normal 32px "Min Sans Trial";
   margin-bottom: 5rem;
+}
+@media (max-width: 767px) {
+  #about .about-content h3 {
+    margin: 1rem 0 3rem 0;
+    font-size: 36px;
+  }
 }
 #about .about-content span {
   font: normal 24px "Raleway";
@@ -365,14 +379,32 @@ p {
   font-weight: 500;
   font-size: 16px;
 }
+#about .about-content a {
+  display: block;
+}
+@media (max-width: 767px) {
+  #about .about-content a {
+    width: 80%;
+  }
+}
 
 #buddymoon {
   background: #F5EFE8;
   padding: 3rem 0 0 0;
 }
+@media (max-width: 767px) {
+  #buddymoon {
+    padding: 3rem 1rem;
+  }
+}
 #buddymoon .buddymoon-content h3 {
   font: normal 32px "Raleway";
   margin-bottom: 5rem;
+}
+@media (max-width: 767px) {
+  #buddymoon .buddymoon-content h3 {
+    margin-bottom: 2rem;
+  }
 }
 #buddymoon .buddymoon-content span {
   font: normal 24px "Raleway";
@@ -384,9 +416,24 @@ p {
   font-weight: 500;
   font-size: 16px;
 }
+@media (max-width: 767px) {
+  #buddymoon .buddymoon-content p {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  #buddymoon .buddymoon-img img {
+    margin-bottom: 1rem;
+  }
+}
 #buddymoon .buddymoon-cta img {
   height: 200px;
   width: auto;
+}
+@media (max-width: 767px) {
+  #buddymoon .buddymoon-cta img {
+    margin-bottom: 2rem;
+  }
 }
 #buddymoon .buddymoon-cta a {
   width: auto !important;
@@ -402,7 +449,7 @@ p {
 @media (max-width: 767px) {
   #rsvp {
     height: auto;
-    padding: 6rem 2rem;
+    padding: 2rem 1rem 6rem 1rem;
   }
 }
 #rsvp .rsvp-content {
@@ -446,6 +493,7 @@ p {
 @media (max-width: 767px) {
   #mnl {
     height: auto;
+    border-width: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -455,18 +503,23 @@ p {
   }
 }
 #mnl .mnl-content div {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 @media (max-width: 767px) {
   #mnl .mnl-content div {
-    padding: 4rem 2rem;
+    padding: 5rem 1rem;
   }
 }
 #mnl .mnl-content h3 {
   font: normal 36px "Min Sans Trial";
   color: #fff;
+}
+@media (max-width: 767px) {
+  #mnl .mnl-content h3 {
+    font-size: 32px;
+  }
 }
 #mnl .mnl-content p {
   font: normal 18px "Raleway";
@@ -475,8 +528,9 @@ p {
 }
 @media (max-width: 767px) {
   #mnl .mnl-content p {
-    font-size: 28px;
+    font-size: 16px;
     width: 100%;
+    margin: 2rem 0;
   }
 }
 
@@ -530,6 +584,12 @@ footer .footer-contact p {
   background-size: 600px;
   background-position: right center;
   padding: 3rem 0;
+}
+@media (max-width: 767px) {
+  #timeline {
+    background-image: none;
+    padding: 3rem 1rem;
+  }
 }
 
 #timeline-content {
@@ -602,6 +662,11 @@ footer .footer-contact p {
   text-align: right;
   width: 80px;
 }
+@media (max-width: 767px) {
+  .timeline-icon {
+    width: 60px;
+  }
+}
 
 .timeline .event span {
   color: #B29166;
@@ -624,8 +689,7 @@ footer .footer-contact p {
 }
 
 .timeline .event:after {
-  box-shadow: 0 0 0 4px #C1A785;
-  left: -5px;
+  left: -4px;
   background: #C1A785;
   border-radius: 50%;
   height: 7px;

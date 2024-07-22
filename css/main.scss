@@ -439,8 +439,15 @@ p {
 #about {
     padding: 10rem 0 3rem 0;
     background: #F5EFE8 url('../assets/about-bg.png') no-repeat;
-    background-size: auto 100%;
-    background-position: bottom 0px right -200px;
+    background-size: 30%;
+    background-position: bottom 0px right 0px;
+
+    @include for-phone {
+        background-size: 75%;
+        background-position: bottom 0px right 0px;
+        padding: 3rem 1rem 30rem 1rem;
+        border-bottom: solid 1px #000;
+    }
 
     .about-img {
         img {
@@ -452,6 +459,11 @@ p {
         h3 {
             font: normal 32px 'Min Sans Trial';
             margin-bottom: 5rem;
+
+            @include for-phone {
+                margin: 1rem 0 3rem 0;
+                font-size: 36px;
+            }
         }
 
         span {
@@ -470,6 +482,14 @@ p {
             font-weight: 500;
             font-size: 16px;
         }
+
+        a {
+            display: block;
+
+            @include for-phone {
+                width: 80%;
+            }
+        }
     }
 }
 
@@ -477,10 +497,18 @@ p {
     background: #F5EFE8;
     padding: 3rem 0 0 0;
 
+    @include for-phone {
+        padding: 3rem 1rem;
+    }
+
     .buddymoon-content {
         h3 {
             font: normal 32px 'Raleway';
             margin-bottom: 5rem;
+
+            @include for-phone {
+                margin-bottom: 2rem;
+            }
         }
 
         span {
@@ -493,6 +521,18 @@ p {
             margin-bottom: 4rem;
             font-weight: 500;
             font-size: 16px;
+
+            @include for-phone {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .buddymoon-img {
+        img {
+            @include for-phone {
+                margin-bottom: 1rem;
+            }
         }
     }
 
@@ -501,6 +541,10 @@ p {
         img {
             height: 200px;
             width: auto;
+
+            @include for-phone {
+                margin-bottom: 2rem;
+            }
         }
 
         a {
@@ -518,7 +562,7 @@ p {
 
     @include for-phone {
         height: auto;
-        padding: 6rem 2rem;
+        padding: 2rem 1rem 6rem 1rem;
     }
 
     .rsvp-content {
@@ -563,6 +607,7 @@ p {
 
     @include for-phone {
         height: auto;
+        border-width: 20px;
     }
 
     .mnl-content {
@@ -573,18 +618,22 @@ p {
         }
 
         div {
-            width: 50%;
+            width: 100%;
             margin: 0 auto;
             text-align: center;
 
             @include for-phone {
-                padding: 4rem 2rem;
+                padding: 5rem 1rem;
             }
         }
 
         h3 {
             font: normal 36px 'Min Sans Trial';
             color: #fff;
+
+            @include for-phone {
+                font-size: 32px;
+            }
         }
 
         p {
@@ -593,8 +642,9 @@ p {
             line-height: 1.5;
 
             @include for-phone {
-                font-size: 28px;
+                font-size: 16px;
                 width: 100%;
+                margin: 2rem 0;
             }
         }
     }
@@ -656,6 +706,11 @@ footer {
     background-size: 600px;
     background-position: right center;
     padding: 3rem 0;
+
+    @include for-phone {
+        background-image: none;
+        padding: 3rem 1rem;
+    }
 }
 
 #timeline-content {
@@ -741,6 +796,10 @@ footer {
     top: -20px;
     text-align: right;
     width: 80px;
+
+    @include for-phone {
+        width: 60px;
+    }
 }
 
 .timeline {
@@ -771,8 +830,7 @@ footer {
 }
 
 .timeline .event:after {
-    box-shadow: 0 0 0 4px #C1A785;
-    left: -5px;
+    left: -4px;
     background: #C1A785;
     border-radius: 50%;
     height: 7px;
