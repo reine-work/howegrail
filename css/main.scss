@@ -318,17 +318,45 @@ p {
 
 #intro {
     height: 100vh;
-    background: url('../assets/intro-bg.jpg') no-repeat;
-    background-size: cover;
-    background-position: center center;
+    position: relative;
+    overflow: hidden;
+    // background: url('../assets/intro-bg.jpg') no-repeat;
+    // background-size: cover;
+    // background-position: center center;
+
+    #bg-vid-about {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        object-fit: cover;
+        transform: scale(1.35);
+
+        @include for-phone {
+            transform: scale(1.5);
+            height: 100vh;
+        }
+    }
 
     @include for-phone {
-        height: auto;
+        height: 100vh;
         padding: 6rem 1rem;
     }
 
     .intro-content {
         text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        @include for-phone {
+            width: 90%;
+        }
 
         h2 {
             color: #fff;
@@ -636,18 +664,38 @@ p {
 }
 
 #mnl {
-    background: #F5EFE8 url('../assets/mnl-bg.png') no-repeat;
-    background-size: cover;
-    background-position: bottom center;
     border: solid 40px #C1A785;
     height: 100vh;
+    position: relative;
+    overflow: hidden;
+
 
     @include for-phone {
         height: auto;
         border-width: 20px;
     }
 
+    #bg-vid-mnl {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        object-fit: cover;
+        transform: scale(1.35);
+
+        @include for-phone {
+            transform: scale(1.5);
+            height: 100vh;
+        }
+    }
+
     .mnl-content {
+
+        position: relative;
+        z-index: 9;
 
         @include for-phone {
             outline-offset: 10px;
@@ -655,12 +703,13 @@ p {
         }
 
         div {
-            width: 100%;
+            width: 60%;
             margin: 0 auto;
             text-align: center;
 
             @include for-phone {
                 padding: 5rem 1rem;
+                width: 95%;
             }
         }
 

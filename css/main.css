@@ -243,18 +243,44 @@ p {
 
 #intro {
   height: 100vh;
-  background: url("../assets/intro-bg.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center;
+  position: relative;
+  overflow: hidden;
+}
+#intro #bg-vid-about {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1.35);
+}
+@media (max-width: 767px) {
+  #intro #bg-vid-about {
+    transform: scale(1.5);
+    height: 100vh;
+  }
 }
 @media (max-width: 767px) {
   #intro {
-    height: auto;
+    height: 100vh;
     padding: 6rem 1rem;
   }
 }
 #intro .intro-content {
   text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+  #intro .intro-content {
+    width: 90%;
+  }
 }
 #intro .intro-content h2 {
   color: #fff;
@@ -528,17 +554,38 @@ p {
 }
 
 #mnl {
-  background: #F5EFE8 url("../assets/mnl-bg.png") no-repeat;
-  background-size: cover;
-  background-position: bottom center;
   border: solid 40px #C1A785;
   height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   #mnl {
     height: auto;
     border-width: 20px;
   }
+}
+#mnl #bg-vid-mnl {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1.35);
+}
+@media (max-width: 767px) {
+  #mnl #bg-vid-mnl {
+    transform: scale(1.5);
+    height: 100vh;
+  }
+}
+#mnl .mnl-content {
+  position: relative;
+  z-index: 9;
 }
 @media (max-width: 767px) {
   #mnl .mnl-content {
@@ -547,13 +594,14 @@ p {
   }
 }
 #mnl .mnl-content div {
-  width: 100%;
+  width: 60%;
   margin: 0 auto;
   text-align: center;
 }
 @media (max-width: 767px) {
   #mnl .mnl-content div {
     padding: 5rem 1rem;
+    width: 95%;
   }
 }
 #mnl .mnl-content h3 {
