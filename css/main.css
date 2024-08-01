@@ -1464,6 +1464,10 @@ footer .footer-contact p {
     padding: 4rem 1rem;
   }
 }
+#sub-story img {
+  width: 55px;
+  margin-bottom: 1rem;
+}
 #sub-story h4 {
   font: normal 28px "Min Sans Trial";
 }
