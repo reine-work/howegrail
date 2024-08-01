@@ -235,6 +235,13 @@ p {
         background-position: bottom center;
     }
 
+    @include for-big-desktop-up {
+        height: 100vh;
+        background: url('../assets/hero/hero-bg-desktop-big.png') no-repeat;
+        background-size: 100%;
+        background-position: center center;
+    }
+
     .hero-caption {
         width: 300px;
         text-align: center;
@@ -1665,6 +1672,28 @@ footer {
 }
 
 #sub-gifts {
+    padding: 5rem 0;
+    background: #F5EFE8;
+
+    @include for-phone {
+        padding: 4rem 1rem;
+    }
+
+    img {
+        width: 60px;
+        margin-bottom: 1rem;
+    }
+
+    h4 {
+        font: normal 28px 'Min Sans Trial';
+    }
+
+    h5 {
+        font: normal 20px 'Min Sans Trial';
+    }
+}
+
+#sub-guide {
     padding: 5rem 0;
     background: #F5EFE8;
 

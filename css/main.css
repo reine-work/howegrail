@@ -165,6 +165,14 @@ p {
     background-position: bottom center;
   }
 }
+@media (min-width: 1800px) {
+  #hero {
+    height: 100vh;
+    background: url("../assets/hero/hero-bg-desktop-big.png") no-repeat;
+    background-size: 100%;
+    background-position: center center;
+  }
+}
 #hero .hero-caption {
   width: 300px;
   text-align: center;
@@ -1506,6 +1514,26 @@ footer .footer-contact p {
   font: normal 28px "Min Sans Trial";
 }
 #sub-gifts h5 {
+  font: normal 20px "Min Sans Trial";
+}
+
+#sub-guide {
+  padding: 5rem 0;
+  background: #F5EFE8;
+}
+@media (max-width: 767px) {
+  #sub-guide {
+    padding: 4rem 1rem;
+  }
+}
+#sub-guide img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+#sub-guide h4 {
+  font: normal 28px "Min Sans Trial";
+}
+#sub-guide h5 {
   font: normal 20px "Min Sans Trial";
 }
 
