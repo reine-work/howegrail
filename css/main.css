@@ -111,6 +111,16 @@ p {
   font-weight: 600;
   transition: all 0.2s ease-in-out;
 }
+@media (min-width: 1024px) {
+  .navbar .nav-link a {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1281px) {
+  .navbar .nav-link a {
+    font-size: 1rem;
+  }
+}
 .navbar .nav-link a:hover {
   color: #B29166;
 }
@@ -127,6 +137,9 @@ p {
   background: #F5EFE8;
   position: relative;
   overflow: hidden;
+  background: url("../assets/hero/hero-bg-desktop-up.png") no-repeat;
+  background-size: 100%;
+  background-position: center center;
 }
 @media (max-width: 767px) {
   #hero {
@@ -181,6 +194,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  display: none;
 }
 @media (min-device-width: 768px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
   .hero-collage {
@@ -201,7 +215,7 @@ p {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1281px) {
   .hero-collage .collage-1 {
     position: relative;
     top: -100px;
@@ -272,7 +286,7 @@ p {
   flex-direction: column;
   align-items: end;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1281px) {
   .hero-collage .collage-2 {
     position: relative;
     top: -100px;
@@ -1132,7 +1146,7 @@ footer .footer-contact p {
   height: 317px;
   background: #E5D8C5;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1281px) {
   .full-details-timeline:after {
     height: 349px;
   }
