@@ -24,7 +24,7 @@
 }
 
 @mixin for-tablet-landscape {
-    @media (max-width: 1024px) and (orientation: landscape) {
+    @media (max-width: 1080px) and (orientation: landscape) {
         @content;
     }
 }
@@ -210,9 +210,27 @@ p {
         height: 115vh;
     }
 
+    @include for-tablet {
+        background: url('../assets/hero/hero-bg-mobile.png') no-repeat;
+        background-size: 90%;
+        background-position: center center;
+        height: 100vh;
+    }
+
+    @include for-tablet-landscape {
+        height: 90vh;
+        background: url('../assets/hero/hero-bg-ipad.png') no-repeat;
+        background-size: 100%;
+        background-position: bottom center;
+    }
+
     .hero-caption {
         width: 300px;
         text-align: center;
+
+        @include for-tablet {
+            margin-top: -125px;
+        }
 
         @include for-phone {
             margin-top: -150px;
@@ -220,6 +238,10 @@ p {
 
         h1 {
             font: normal 36px 'Min Sans Trial';
+
+            @include for-tablet-landscape {
+                font-size: 28px;
+            }
         }
     }
 }
@@ -230,6 +252,14 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @include for-tablet {
+        display: none;
+    }
+
+    @include for-tablet-landscape {
+        display: none;
+    }
 
     @include for-phone {
         display: none;
@@ -245,6 +275,11 @@ p {
 
         }
 
+        @include for-tablet-landscape {
+            position: relative;
+            top: -60px;
+        }
+
         @include for-phone {
             flex-direction: row;
             justify-content: space-between;
@@ -257,8 +292,12 @@ p {
             width: 600px;
 
             @include for-desktop-md {
-                top: 100px;
+                top: 75px;
                 width: 500px;
+            }
+
+            @include for-tablet-landscape {
+                width: 50%;
             }
 
             @include for-phone {
@@ -278,6 +317,11 @@ p {
                 width: 400px;
             }
 
+            @include for-tablet-landscape {
+                width: 300px;
+                top: -35px;
+            }
+
             @include for-phone {
                 width: 150px;
                 height: auto;
@@ -290,6 +334,7 @@ p {
     .collage-2 {
         display: flex;
         flex-direction: column;
+        align-items: end;
 
         @include for-desktop-up {
             position: relative;
@@ -301,6 +346,11 @@ p {
             top: 120px;
             right: -20px;
             width: 450px;
+
+            @include for-tablet-landscape {
+                width: 275px;
+                top: 35px;
+            }
         }
 
         .collage-img-4 {
@@ -310,6 +360,12 @@ p {
 
             @include for-desktop-md {
                 width: 450px;
+            }
+
+            @include for-tablet-landscape {
+                width: 350px;
+                top: -50px;
+                right: -30px;
             }
         }
 
