@@ -1573,6 +1573,44 @@ footer {
     }
 }
 
+#sub-story {
+    padding: 5rem 0;
+    background: #F5EFE8;
+
+    @include for-phone {
+        padding: 4rem 1rem;
+    }
+
+    h4 {
+        font: normal 28px 'Min Sans Trial';
+    }
+
+    h5 {
+        font: normal 20px 'Min Sans Trial';
+    }
+}
+
+#sub-gifts {
+    padding: 5rem 0;
+    background: #F5EFE8;
+
+    @include for-phone {
+        padding: 4rem 1rem;
+    }
+
+    img {
+        width: 60px;
+        margin-bottom: 1rem;
+    }
+
+    h4 {
+        font: normal 28px 'Min Sans Trial';
+    }
+
+    h5 {
+        font: normal 20px 'Min Sans Trial';
+    }
+}
 
 
 
