@@ -1516,6 +1516,9 @@ footer .footer-contact p {
 #sub-gifts h5 {
   font: normal 20px "Min Sans Trial";
 }
+#sub-gifts p {
+  word-wrap: break-word;
+}
 
 #sub-guide {
   padding: 5rem 0;
