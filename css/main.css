@@ -1427,7 +1427,7 @@ footer .footer-contact p {
   border: solid 2px #B1605E;
   outline: 2px solid #B1605E;
   outline-offset: -20px;
-  padding: 8rem 3rem;
+  padding: 8rem 3rem 3rem 3rem;
 }
 @media (max-width: 767px) {
   #entourage .entourage-content {
