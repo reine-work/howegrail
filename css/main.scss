@@ -1706,6 +1706,26 @@ footer {
         padding: 4rem 1rem;
     }
 
+    .mini-updates {
+        padding: 1.5rem;
+        background: hsla(34, 33%, 55%, 0.259);
+        border-radius: 2px;
+        margin-bottom: 2rem;
+        position: relative;
+
+        ::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 10px 10px 0;
+            border-color: transparent #c01717 transparent transparent;
+            right: 0;
+            top: 0;
+            position: absolute;
+        }
+    }
+
     img {
         width: 60px;
         margin-bottom: 1rem;
