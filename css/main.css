@@ -33,6 +33,12 @@ p {
   line-height: 1.75;
 }
 
+a {
+  text-decoration: none;
+  color: #A23E3E;
+  font-weight: bold;
+}
+
 .btn {
   padding: 1rem 4rem;
   font-size: 1rem;
@@ -94,7 +100,7 @@ p {
 
 .navbar {
   background: #E5D8C5;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 @media (max-width: 767px) {
   .navbar {
@@ -102,7 +108,7 @@ p {
   }
 }
 .navbar .nav-link {
-  margin: 0 0.5rem;
+  margin: 0 0.25rem;
 }
 .navbar .nav-link a {
   text-decoration: none !important;
@@ -113,12 +119,12 @@ p {
 }
 @media (min-width: 1024px) {
   .navbar .nav-link a {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 }
 @media (min-width: 1281px) {
   .navbar .nav-link a {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 }
 .navbar .nav-link a:hover {
@@ -1518,6 +1524,36 @@ footer .footer-contact p {
   font: normal 20px "Min Sans Trial";
 }
 #sub-gifts p {
+  word-wrap: break-word;
+}
+
+#sub-dinner {
+  padding: 5rem 0;
+  background: #F5EFE8;
+}
+@media (max-width: 767px) {
+  #sub-dinner {
+    padding: 4rem 1rem;
+  }
+}
+#sub-dinner .dnr-menu-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  justify-content: center;
+}
+#sub-dinner img {
+  width: 80px;
+  margin-bottom: 0.5rem;
+}
+#sub-dinner h4 {
+  font: normal 28px "Min Sans Trial";
+}
+#sub-dinner h5 {
+  font: normal 20px "Min Sans Trial";
+}
+#sub-dinner p {
   word-wrap: break-word;
 }
 
