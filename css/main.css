@@ -119,12 +119,12 @@ a {
 }
 @media (min-width: 1024px) {
   .navbar .nav-link a {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
 }
 @media (min-width: 1281px) {
   .navbar .nav-link a {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 }
 .navbar .nav-link a:hover {
@@ -1616,4 +1616,11 @@ footer .footer-contact p {
 
 iframe[sandbox] .read-article {
   display: none;
+}
+
+#background-music {
+  position: fixed;
+  width: 0;
+  height: 0;
+  border: 0;
 }/*# sourceMappingURL=main.css.map */

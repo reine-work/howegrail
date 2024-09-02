@@ -43,7 +43,7 @@
 //     }
 // })();
 
-"use strict"
+// "use strict"
 
 // Adding scroll event listener
 document.addEventListener('scroll', horizontalScroll);

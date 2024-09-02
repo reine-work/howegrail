@@ -1,0 +1,29 @@
+<!-- music-player.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    
+    <!-- <script>
+        // Check if music is already playing
+        window.onload = function() {
+            if (!localStorage.getItem('musicPlaying')) {
+                var audio = document.getElementById('background-music');
+                audio.play();
+                localStorage.setItem('musicPlaying', 'true');
+            }
+        };
+    </script> -->
+</head>
+
+<body>
+    <audio id="background-music" autoplay loop>
+        <source src="/assets/jorgeandcelesteaudio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+</body>
+
+</html>

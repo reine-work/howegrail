@@ -191,11 +191,11 @@ a {
             transition: all 0.2s ease-in-out;
 
             @include for-desktop {
-                font-size: 0.85rem;
+                font-size: 0.95rem;
             }
 
             @include for-desktop-up {
-                font-size: 0.95rem;
+                font-size: 1rem;
             }
 
             &:hover {
@@ -1821,4 +1821,12 @@ footer {
 
 iframe[sandbox] .read-article {
     display: none;
+}
+
+// BG MUSIC
+#background-music {
+    position: fixed;
+    width: 0;
+    height: 0;
+    border: 0;
 }
