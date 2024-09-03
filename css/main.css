@@ -1616,11 +1616,4 @@ footer .footer-contact p {
 
 iframe[sandbox] .read-article {
   display: none;
-}
-
-#background-music {
-  position: fixed;
-  width: 0;
-  height: 0;
-  border: 0;
 }/*# sourceMappingURL=main.css.map */
