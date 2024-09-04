@@ -122,10 +122,19 @@
     <script src="js/site.js"></script>
 
     <script>
-        var x = document.getElementById("background-music");
-        x.autoplay = true;
-        x.load();
-    </script>
+        var music = document.querySelector('audio');
+        var promise = music.play();
+        if (promise !== undefined) {
+          promise.then(_ => {
+            // This signifies that autoplay started.
+          }).catch(error => {
+            // This signifies that autoplay was disabled.
+            // Attempt to play it, while muted, and tell the user that it's running but muted.
+            music.muted = true;
+            music.play();
+          });
+        }
+      </script>
 
 </body>
 
