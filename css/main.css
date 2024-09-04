@@ -1542,6 +1542,11 @@ footer .footer-contact p {
   width: 100%;
   justify-content: center;
 }
+@media (max-width: 767px) {
+  #sub-dinner .dnr-menu-btn {
+    flex-direction: column;
+  }
+}
 #sub-dinner img {
   width: 80px;
   margin-bottom: 0.5rem;

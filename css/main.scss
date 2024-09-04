@@ -1718,6 +1718,10 @@ footer {
         gap: 6px;
         width: 100%;
         justify-content: center;
+
+        @include for-phone {
+            flex-direction: column;
+        }
     }
 
     img {
