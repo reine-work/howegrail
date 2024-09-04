@@ -80,6 +80,10 @@ a {
   }
 }
 
+.navbar-brand img {
+  height: 30px;
+  width: auto;
+}
 @media (max-width: 767px) {
   .navbar-brand img {
     height: 30px;
@@ -100,15 +104,9 @@ a {
 
 .navbar {
   background: #E5D8C5;
-  padding: 2rem 1rem;
-}
-@media (max-width: 767px) {
-  .navbar {
-    padding: 1.25rem 0.5rem;
-  }
 }
 .navbar .nav-link {
-  margin: 0 0.25rem;
+  margin: 0 0.75rem;
 }
 .navbar .nav-link a {
   text-decoration: none !important;
@@ -135,6 +133,7 @@ a {
     color: #B29166;
     font-size: 1.2rem;
     padding: 0.5rem 0;
+    display: block;
   }
 }
 
