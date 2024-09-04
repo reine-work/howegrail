@@ -1639,17 +1639,24 @@ iframe[sandbox] .read-article {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .popup-content {
   position: relative;
-  margin: 15% auto;
-  padding: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem 1.5rem;
   background-color: white;
   width: 80%;
-  max-width: 600px;
+  max-width: 500px;
   border-radius: 2px;
+}
+@media (max-width: 767px) {
+  .popup-content {
+    padding: 2rem 1rem;
+  }
 }
 
 .close {
@@ -1662,4 +1669,78 @@ iframe[sandbox] .read-article {
 
 .popup.hidden {
   display: none;
+}
+
+.countdown-content {
+  text-align: center;
+}
+.countdown-content h1 {
+  font: normal 36px "Raleway";
+  color: #A23E3E;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .countdown-content h1 {
+    font-size: 36px;
+  }
+}
+.countdown-content p {
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .countdown-content p {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-top: 1rem;
+  }
+}
+.countdown-content button {
+  width: 60%;
+  margin: 0 auto;
+}
+.countdown-content ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.countdown-content ul li {
+  list-style: none;
+  text-align: center;
+}
+.countdown-content ul li #days {
+  font: normal 36px "Min Sans Trial";
+  margin: 1rem;
+}
+@media (max-width: 767px) {
+  .countdown-content ul li #days {
+    font-size: 30px;
+  }
+}
+.countdown-content ul li #hours {
+  font: normal 36px "Min Sans Trial";
+  margin: 1rem;
+}
+@media (max-width: 767px) {
+  .countdown-content ul li #hours {
+    font-size: 30px;
+  }
+}
+.countdown-content ul li #minutes {
+  font: normal 36px "Min Sans Trial";
+  margin: 1rem;
+}
+@media (max-width: 767px) {
+  .countdown-content ul li #minutes {
+    font-size: 30px;
+  }
+}
+.countdown-content ul li #seconds {
+  font: normal 36px "Min Sans Trial";
+  margin: 1rem;
+}
+@media (max-width: 767px) {
+  .countdown-content ul li #seconds {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1845,18 +1845,25 @@ iframe[sandbox] .read-article {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .popup-content {
     position: relative;
-    margin: 15% auto;
-    padding: 20px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 2rem 1.5rem;
     background-color: white;
     width: 80%;
-    max-width: 600px;
+    max-width: 500px;
     border-radius: 2px;
     // box-shadow: 0px 0px 10px 0px #c5c5c5;
+
+    @include for-phone {
+        padding: 2rem 1rem;
+    }
 }
 
 .close {
@@ -1869,4 +1876,81 @@ iframe[sandbox] .read-article {
 
 .popup.hidden {
     display: none;
+}
+
+.countdown-content {
+    text-align: center;
+
+    h1 {
+        font: normal 36px 'Raleway';
+        color: #A23E3E;
+        margin: 0;
+
+        @include for-phone {
+            font-size: 36px;
+        }
+    }
+
+    p {
+        margin-bottom: 2rem;
+
+        @include for-phone {
+            font-size: 16px;
+            line-height: 1.25;
+            margin-top: 1rem;
+        }
+    }
+
+    button {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            list-style: none;
+            text-align: center;
+
+            #days {
+                font: normal 36px "Min Sans Trial";
+                margin: 1rem;
+
+                @include for-phone {
+                    font-size: 30px;
+                }
+            }
+
+            #hours {
+                font: normal 36px "Min Sans Trial";
+                margin: 1rem;
+
+                @include for-phone {
+                    font-size: 30px;
+                }
+            }
+
+            #minutes {
+                font: normal 36px "Min Sans Trial";
+                margin: 1rem;
+
+                @include for-phone {
+                    font-size: 30px;
+                }
+            }
+
+            #seconds {
+                font: normal 36px "Min Sans Trial";
+                margin: 1rem;
+
+                @include for-phone {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
 }
