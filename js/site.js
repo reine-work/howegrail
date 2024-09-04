@@ -186,7 +186,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
 var MySite = MySite || {};
 
 MySite.AjaxLoader = (function() {

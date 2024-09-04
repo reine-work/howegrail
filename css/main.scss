@@ -1837,7 +1837,7 @@ iframe[sandbox] .read-article {
 
 /* Pop-up styling */
 .popup {
-    display: none;
+    display: block;
     /* Hidden by default */
     position: fixed;
     z-index: 1000;
