@@ -21,11 +21,27 @@
 
 <body>
 
-    <audio id="background-music" controls autoplay loop>
+    <audio id="background-music" controls loop>
         <source src="jorgeandcelesteaudio.mp3" type="audio/mpeg">
         <source src="jorgeandcelesteaudio.ogg" type="audio/ogg">
         Your browser does not support the audio element.
     </audio>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <div class="countdown-content">
+                <ul>
+                    <li><span id="days">0</span>days</li>
+                    <li><span id="hours">0</span>Hours</li>
+                    <li><span id="minutes">0</span>Minutes</li>
+                    <li><span id="seconds">0</span>Seconds</li>
+                </ul>
+            </div>
+            <!-- <input type="button" value="PLAY" onclick="play()"> -->
+            <button id="playAndDismissBtn">Play & Dismiss</button>
+        </div>
+    </div>
 
     <!-- <header>
         <nav class="navbar navbar-expand-lg">
@@ -120,6 +136,43 @@
 
     <script src="js/main.js"></script>
     <script src="js/site.js"></script>
+    <script src="libs/countdown/yscountdown.min.js"></script>
+    <script>
+
+        const playAndDismissBtn = document.getElementById('playAndDismissBtn');
+        const audio = document.getElementById('background-music');
+        const popup = document.getElementById('popup');
+
+        playAndDismissBtn.addEventListener('click', function() {
+        // Play the audio
+        audio.play();
+        
+        // Dismiss the pop-up
+        popup.classList.add('hidden');
+        });
+
+        var daysElement = document.querySelector("#days");
+        var hoursElement = document.querySelector("#hours");
+        var minutesElement = document.querySelector("#minutes");
+        var secondsElement = document.querySelector("#seconds");
+        var containerElement = document.querySelector(".container");
+        // var endDate = (new Date().getFullYear() + 1) + "/01/01";
+        var endDate = "2024/11/24";
+    
+        var myCountDown = new ysCountDown(endDate, function (remaining, finished) {
+    
+          if (finished) {
+            containerElement.textContent = "Expired";
+          }
+          
+          daysElement.textContent = remaining.totalDays;
+          hoursElement.textContent = remaining.hours;
+          minutesElement.textContent = remaining.minutes;
+          secondsElement.textContent = remaining.seconds;
+    
+        });
+    
+      </script>
 
 </body>
 

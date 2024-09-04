@@ -169,6 +169,24 @@
 //   nav_menu.classList.remove("active");
 // }))
 
+// Modal
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if the user has visited before
+    if (!localStorage.getItem('popupShown')) {
+        // Display the pop-up
+        document.getElementById('popup').style.display = 'block';
+
+        // Set local storage item so the pop-up won't show again
+        localStorage.setItem('popupShown', 'true');
+    }
+
+    // Close the pop-up when the close button is clicked
+    document.querySelector('.popup .close').addEventListener('click', function() {
+        document.getElementById('popup').style.display = 'none';
+    });
+});
+
+
 var MySite = MySite || {};
 
 MySite.AjaxLoader = (function() {
@@ -303,6 +321,8 @@ MySite.HorizontalScroller = (function() {
 // Initialize the AJAX loader when the page loads
 MySite.AjaxLoader.init();
 
+
+// Responsive Nav
 const hamburger = document.querySelector(".hamburger")
 const nav_menu = document.querySelector(".nav-menu")
 
