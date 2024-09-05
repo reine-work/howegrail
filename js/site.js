@@ -170,21 +170,21 @@
 // }))
 
 // Modal
-document.addEventListener('DOMContentLoaded', function() {
-    // Check if the user has visited before
-    if (!localStorage.getItem('popupShown')) {
-        // Display the pop-up
-        document.getElementById('popup').style.display = 'block';
+// document.addEventListener('DOMContentLoaded', function() {
+//     // Check if the user has visited before
+//     if (!localStorage.getItem('popupShown')) {
+//         // Display the pop-up
+//         document.getElementById('popup').style.display = 'block';
 
-        // Set local storage item so the pop-up won't show again
-        localStorage.setItem('popupShown', 'true');
-    }
+//         // Set local storage item so the pop-up won't show again
+//         localStorage.setItem('popupShown', 'true');
+//     }
 
-    // Close the pop-up when the close button is clicked
-    document.querySelector('.popup .close').addEventListener('click', function() {
-        document.getElementById('popup').style.display = 'none';
-    });
-});
+//     // Close the pop-up when the close button is clicked
+//     document.querySelector('.popup .close').addEventListener('click', function() {
+//         document.getElementById('popup').style.display = 'none';
+//     });
+// });
 
 var MySite = MySite || {};
 
