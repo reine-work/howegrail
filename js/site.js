@@ -191,7 +191,7 @@ var MySite = MySite || {};
 MySite.AjaxLoader = (function() {
     var links, contentDiv;
 
-    // Function to load page content using AJAX
+    // Function to load page content using AJAX (Vanilla JS)
     function loadPage(url) {
         var xhr = new XMLHttpRequest();
         xhr.open('GET', url, true);
@@ -235,6 +235,35 @@ MySite.AjaxLoader = (function() {
 
             // Initialize Instagram embeds
             reinitializeInstagramEmbeds();
+        });
+
+        // jQuery AJAX functionality for links
+        $(document).on('click', 'a', function(e) {
+            e.preventDefault();
+            var url = $(this).attr('href');
+
+            // Load content via AJAX
+            $.ajax({
+                url: url,
+                success: function(data) {
+                    $('#content').html(data);
+
+                    // Scroll to top
+                    window.scrollTo(0, 0);
+
+                    // Update the browser's URL
+                    window.history.pushState(null, '', url);
+
+                    // Reinitialize the horizontal scrolling function
+                    MySite.HorizontalScroller.init();
+
+                    // Reinitialize Bootstrap components and navbar
+                    bootstrapInit();
+
+                    // Reinitialize Instagram embeds
+                    reinitializeInstagramEmbeds();
+                }
+            });
         });
     }
 
@@ -319,7 +348,6 @@ MySite.HorizontalScroller = (function() {
 
 // Initialize the AJAX loader when the page loads
 MySite.AjaxLoader.init();
-
 
 // Responsive Nav
 const hamburger = document.querySelector(".hamburger")

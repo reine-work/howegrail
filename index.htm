@@ -74,7 +74,7 @@
     <header>
         <div class="container-xxl">
             <nav class="navbar">
-                <a class="navbar-brand" href="index.htm">
+                <a class="navbar-brand" href="home.htm">
                     <img src="assets/logo-jorge-and-celeste.svg" />
                 </a>
               <ul class="nav-menu">
@@ -194,6 +194,27 @@
         });
     
       </script>
+
+      <!-- <script>
+        $(document).on('click', 'a', function(e) {
+            e.preventDefault();
+            var url = $(this).attr('href');
+            
+            // Load content via AJAX
+            $.ajax({
+                url: url,
+                success: function(data) {
+                    $('#content').html(data);
+                    
+                    // Scroll to top
+                    window.scrollTo(0, 0);
+                    
+                    // Update the browser's URL
+                    window.history.pushState(null, '', url);
+                }
+            });
+        });
+      </script> -->
 
 </body>
 
